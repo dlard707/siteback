@@ -1,5 +1,6 @@
 // Importação Express
 const express = require('express');
+const noticias = require('./mockup')
 
 // criando um objeto na variável app
 const app = express();
@@ -10,10 +11,13 @@ app.use(express.static('public'));
 
 // Criando a nossa primeira rota
 app.get('/', (req, res) => {
-    res.send('home/index', {noticias: noticias.slice(0, 3)});
+    //mudar res.send() para res.render()
+    res.render('./home/index', {noticias: noticias.slice(0, 3)});
+   
 })
 //Criando a nossa segunda rota
 app.get('/noticias', (req, res) => {
+     //mudar res.send() para res.render()
     res.send('Todas as noticias');
 })
 
