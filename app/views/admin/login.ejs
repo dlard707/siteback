@@ -1,0 +1,31 @@
+<%- include('../common/header') %>
+<!-- Divisão ----------------------------------------------- -->
+<%- include('../common/menu') %>
+<!-- Divisão ----------------------------------------------- -->
+<main class="form-signin mb-4">
+    <div class="container">
+        <form action="/admin/autenticar" method="post">
+            <h1 class="mb-3 text-center mt-4">Login</h1>
+        
+            <div class="form-floating my-2">
+                <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Usuário" autocomplete="off" required>
+                <label for="usuario">Usuário</label>
+            </div>
+            <div class="form-floating my-2">
+                <input type="password" name="senha" class="form-control" id="senha" placeholder="Senha" autocomplete="off" required>
+                <label for="senha">Senha</label>
+            </div>
+        
+            <button type="submit" class="btn btn-lg btn-primary w-100">Entrar</button>
+        
+        </form>
+
+    </div>
+
+
+</main>
+
+
+
+<!-- Divisão ----------------------------------------------- -->
+<%- include('../common/footer') %>
