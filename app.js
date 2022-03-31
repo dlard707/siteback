@@ -4,7 +4,7 @@ const app = require('./config/server');
 //coneão com o modulo de base de dados
 const db = require('./config/dbConnection');
 //Definindo a porta da aplicação
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 // Criando a nossa primeira rota
 app.get('/', async (req, res) => {
